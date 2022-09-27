@@ -11,7 +11,6 @@ Manual of using the script:
 Example:
 
 barcode01,sample1
-
 barcode02,sample2
 
 2, Prepare the reference sequences in a directory. The name of reference sequence fasta files should be the same as the sample name in the csv file. For example, the sample name is 'PlasmidA' then the reference file is 'PlasmidA.fasta'. Prepare a directory whose subdirectories (barcodeXX) contain fastq files. 
