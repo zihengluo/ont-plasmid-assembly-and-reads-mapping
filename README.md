@@ -20,6 +20,6 @@ barcode02,sample2
 
 Example:
 
-bash auto_assembly_readsmap.sh /home/fungi/plasmid_reads /home/fungi/reference /home/fungi/sample.csv /home/fungi
+bash auto_assembly_readsmap.sh /home/fungi/plasmid_reads /home/fungi/reference /home/fungi/sample.csv
 
 5, The directory containing all the outputs called 'plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain two subdirectories called 'assembly_output' and 'readmap_output' and also a log file.
