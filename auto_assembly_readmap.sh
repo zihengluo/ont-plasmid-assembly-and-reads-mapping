@@ -40,8 +40,7 @@ mv ${BC}.final.fasta ${SAMPLE}.${BC}.assembly.fasta;
 mv ${BC}.annotations.bed ${SAMPLE}.${BC}.annotation.bed;
 mv wf-clone-validation-report.html ${SAMPLE}_${BC}_assembly_report.html;
 cd $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output
-minimap2 -ax map-ont -t 1 --secondary=no $2/${SAMPLE}.fasta $1/${BC}/*.fastq | samtools sort -@16 -O BAM -o ${SAMPLE}.${BC}.ontreads.map.ba
-m;
+minimap2 -ax map-ont -t 1 --secondary=no $2/${SAMPLE}.fasta $1/${BC}/*.fastq | samtools sort -@16 -O BAM -o ${SAMPLE}.${BC}.ontreads.map.bam;
 samtools index ${SAMPLE}.${BC}.ontreads.map.bam;
 cd $current_path
 done<$3
