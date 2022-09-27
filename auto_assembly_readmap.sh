@@ -1,9 +1,9 @@
 Help()
 {
 echo Here is an automatic script for plasmid assembly and reference vs. reads mapping, please follow the instruction to enter inputs:
-echo At first place, enter the path to the directory containing subdirectories name after barcode number and have ONT reads in fastq format
-echo At second plcae, enter the path to the directory containing reference seuqences name after sample names and are in fasta format
-echo At third place, enter the path to the headless csv file containing barcode number and sample name
+echo In the first place, enter the path to the directory containing subdirectories name after barcode number and have ONT reads in fastq format
+echo In the second plcae, enter the path to the directory containing reference seuqences name after sample names and are in fasta format
+echo In the third place, enter the path to the headless csv file containing barcode number and sample name
 echo Outputs will be in the directory running the script
 echo
 echo Here is an example of csv file:
