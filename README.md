@@ -29,7 +29,7 @@ Run the script without input to read manual
 
 `bash plasmid_assembly_readmap`
 
-To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. 
+To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute.
 
 Here is an example of using test data in the script directory for try:
 
