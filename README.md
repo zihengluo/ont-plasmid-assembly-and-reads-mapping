@@ -33,6 +33,6 @@ To fill inputs of the script, in the first place, enter the path to the director
 
 Here is an example of using test data in the script directory for try:
 
-`bash auto_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv`
+```bash auto_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv```
 
 5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain two subdirectories called 'yyyymmdd_assembly_output' and 'yyyymmdd_readmap_output' and also a log file.
