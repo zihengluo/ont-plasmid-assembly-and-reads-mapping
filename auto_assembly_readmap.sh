@@ -8,11 +8,11 @@ echo Outputs will be in the directory running the script
 echo
 echo Here is an example of csv file:
 echo
-echo barcode01,sample1
-echo barcode02,sample2
+echo barcode01,PER101
+echo barcode02,PER101
 echo
 echo Here is an example usage:
-echo bash makeflag.sh /home/fungi/plasmid_reads /home/fungi/reference /home/fungi/sample.csv /home/fungi
+echo bash auto_assembly_readmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv
 }
 
 
@@ -21,7 +21,7 @@ if [[ $# -eq 0 ]] ; then
     exit 0
 fi
 
-DB_PATH=/home/ziheng/plasmid/wf-clone-validation-db
+DB_PATH=/home/nanopore/plasmid_assembly_readmap/wf-clone-validation-db
 
 current_path=$(pwd)
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output
