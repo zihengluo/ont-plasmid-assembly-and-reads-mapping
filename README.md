@@ -19,20 +19,20 @@ barcode02,PER101
 
 4, Go into the directory of script 
 
-'cd /home/nanopore/plasmid_assembly_readmap'
+`cd /home/nanopore/plasmid_assembly_readmap`
 
 Activate the env for it 
 
-'conda activate plasmid_assembly_readmap'
+`conda activate plasmid_assembly_readmap`
 
 Run the script without input to read manual 
 
-'bash plasmid_assembly_readmap'
+`bash plasmid_assembly_readmap`
 
 To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. 
 
 Here is an example of using test data in the script directory for try:
 
-'bash auto_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv'
+`bash auto_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv`
 
 5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain two subdirectories called 'yyyymmdd_assembly_output' and 'yyyymmdd_readmap_output' and also a log file.
