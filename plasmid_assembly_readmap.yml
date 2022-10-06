@@ -1,0 +1,33 @@
+name: plasmid_assembly_readmap
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - bwa-mem2=2.2.1=h9a82719_1
+  - bzip2=1.0.8=h7b6447c_0
+  - c-ares=1.18.1=h7f8727e_0
+  - ca-certificates=2022.07.19=h06a4308_0
+  - coreutils=8.32=h7b6447c_0
+  - curl=7.82.0=h7f8727e_0
+  - k8=0.2.5=h9a82719_1
+  - krb5=1.19.2=hac12032_0
+  - libcurl=7.82.0=h0b77cf5_0
+  - libedit=3.1.20210910=h7f8727e_0
+  - libev=4.33=h7f8727e_1
+  - libgcc=7.2.0=h69d50b8_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libnghttp2=1.46.0=hce63b2e_0
+  - libssh2=1.10.0=h8f2d780_0
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - minimap2=2.17=h5bf99c6_4
+  - ncurses=6.3=h7f8727e_2
+  - nextflow=21.10.6=h4a94de4_0
+  - openjdk=8.0.152=h7b6447c_3
+  - openssl=1.1.1q=h7f8727e_0
+  - samtools=1.3.1=0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7f8727e_4
+prefix: /home/nanopore/.conda/envs/plasmid_assembly_readmap
