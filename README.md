@@ -17,7 +17,7 @@ barcode02,PER101
 
 3, Prepare a directory whose subdirectories (barcodeXX) contain fastq files. Usually, the basecalling ouput directory can be directly used for it.
 
-4,Go into the directory of script (cd /home/nanopore/plasmid_assembly_readmap) Run the script. In the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. 
+4,Go into the directory of script (cd /home/nanopore/plasmid_assembly_readmap). Activate the env for it (conda activate plasmid_assembly_readmap). Run the script without input to read manual (bash plasmid_assembly_readmap). To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. 
 
 Here is an example of using test data in the script directory for try:
 
