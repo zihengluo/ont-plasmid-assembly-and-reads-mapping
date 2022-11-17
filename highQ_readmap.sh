@@ -31,7 +31,7 @@ do BC=$(echo ${LS} | cut -d ',' -f 1);
 SAMPLE=$(echo ${LS} | cut -d ',' -f 2);
 cat $1/${BC}/*.fastq > merged.fastq;
 conda activate nanofilt;
-NanoFilt -q 11 $1/${BC}/merged.fastq | gzip > $1/${BC}/highQuality-reads.fastq.gz;
+NanoFilt -q $4 $1/${BC}/merged.fastq | gzip > $1/${BC}/highQuality-reads.fastq.gz;
 conda activate minimap2;
 minimap2 -ax map-ont -t 10 --secondary=no $2/${SAMPLE}.fasta $1/${BC}/highQuality-reads.fastq.gz | samtools sort -@8 -O BAM -o $current_path/$(date +%Y%m%d)_highQ_map/${BC}.${SAMPLE}.highQreads.bam;
 samtools index $current_path/$(date +%Y%m%d)_highQ_map/${BC}.${SAMPLE}.highQreads.bam;
