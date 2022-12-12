@@ -35,7 +35,7 @@ while read LS;
 do BC=$(echo ${LS} | cut -d ',' -f 1);
 SAMPLE=$(echo ${LS} | cut -d ',' -f 2);
 echo "Working on ${BC} which is sample ${SAMPLE}";
-nextflow run epi2me-labs/wf-clone-validation -profile conda --fastq $1/${BC} --db_directory ${DB_PATH} --out_dir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output/$(date +%Y%m%d)_${SAMPLE}_${BC};
+nextflow run epi2me-labs/wf-clone-validation -r 944a6f9bf6 -profile conda --fastq $1/${BC} --db_directory ${DB_PATH} --out_dir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output/$(date +%Y%m%d)_${SAMPLE}_${BC};
 cd $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output/$(date +%Y%m%d)_${SAMPLE}_${BC};
 mv ${BC}.final.fasta ${SAMPLE}.${BC}.assembly.fasta;
 mv ${BC}.annotations.bed ${SAMPLE}.${BC}.annotation.bed;
