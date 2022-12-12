@@ -1,6 +1,6 @@
 # ont-plasmid-assembly-and-reads-mapping
 
-This script called 'auto_plasmid_assembly_readmap.sh' can assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. The ONT reads are mapped against the reference by minimap2 without secondary mapping and have bam files as output. The script is placed at nanopore account on labcomputer (/home/nanopore/plasmid_assembly_readmap).
+This script called 'plasmid_assembly_readsmap.sh' can assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. The ONT reads are mapped against the reference by minimap2 without secondary mapping and have bam files as output. The script is placed at nanopore account on labcomputer (/home/nanopore/plasmid_assembly_readmap).
 
 Manual of using the script:
 
@@ -23,18 +23,18 @@ barcode02,PER101
 
 Activate the env for it 
 
-`conda activate plasmid_assembly_readmap.sh`
+`conda activate plasmid_assembly_readmap`
 
 Run the script without input to read manual 
 
-`bash plasmid_assembly_readmap.sh`
+`bash plasmid_assembly_readsmap.sh`
 
-To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute.
+To fill inputs of the script, in the first place, enter the path to the directory whose subdirectories contain fastq files. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute.In the fourth place, enter the minimal quality score for filitering.
 
 Here is an example of using test data in the script directory for try:
 
 ```
-bash auto_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv
+bash plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
 ```
 
-5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain two subdirectories called 'yyyymmdd_assembly_output' and 'yyyymmdd_readmap_output' and also a log file.
+5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain two subdirectories called 'yyyymmdd_assembly_output' and 'yyyymmdd_readmap_output_minQ{num}' and also a log file.
