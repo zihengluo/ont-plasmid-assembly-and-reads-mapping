@@ -13,7 +13,7 @@ echo barcode01,PER101
 echo barcode02,PER101
 echo
 echo Here is an example usage:
-echo bash auto_assembly_readmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
+echo bash plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
 }
 
 
