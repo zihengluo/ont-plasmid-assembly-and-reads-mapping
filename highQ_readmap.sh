@@ -4,7 +4,7 @@ echo Here is an automatic script for high quality plasmid reads mapping
 echo In the first place, enter the path to the directory containing subdirectories name after barcode number and have ONT reads in fastq format
 echo In the second plcae, enter the path to the directory containing reference seuqences name after sample names and are in fasta format
 echo In the third place, enter the path to the headless csv file containing barcode number and sample name
-echo In the third place, enter the minimal quality score for filitering 
+echo In the fourth place, enter the minimal quality score for filitering 
 echo Outputs will be in the directory running the script
 echo
 echo Here is an example of csv file:
