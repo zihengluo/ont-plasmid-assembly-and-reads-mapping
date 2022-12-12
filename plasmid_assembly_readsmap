@@ -27,7 +27,7 @@ DB_PATH=/home/nanopore/plasmid_assembly_readmap/wf-clone-validation-db
 current_path=$(pwd)
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output
-mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ{$4}
+mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ$4
 
 
 {
@@ -45,8 +45,8 @@ cat $1/${BC}/*.fastq > merged.fastq;
 conda activate /home/groups/schwessinger/condaEnvs/NanoplotEtAl;
 NanoFilt -q $4 $1/${BC}/merged.fastq | gzip > $1/${BC}/highQuality-reads.fastq.gz;
 conda activate plasmid_assembly_readmap;
-minimap2 -ax map-ont -t 10 --secondary=no $2/${SAMPLE}.fasta $1/${BC}/highQuality-reads.fastq.gz | samtools sort -@8 -O BAM -o $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ{$4}/${BC}.${SAMPLE}.minQ{$4}.bam;
-samtools index $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ{$4}/${BC}.${SAMPLE}.minQ{$4}.bam;
+minimap2 -ax map-ont -t 10 --secondary=no $2/${SAMPLE}.fasta $1/${BC}/highQuality-reads.fastq.gz | samtools sort -@8 -O BAM -o $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ$4/${BC}.${SAMPLE}.minQ$4.bam;
+samtools index $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ$4/${BC}.${SAMPLE}.minQ$4.bam;
 rm $1/${BC}/merged.fastq;
 rm $1/${BC}/highQuality-reads.fastq.gz;
 done<$3
