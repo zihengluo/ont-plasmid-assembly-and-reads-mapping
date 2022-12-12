@@ -23,7 +23,7 @@ barcode02,PER101
 
 Activate the env for it 
 
-`conda activate plasmid_assembly_readmap`
+`conda activate plasmid_assembly_readmap.sh`
 
 Run the script without input to read manual 
 
