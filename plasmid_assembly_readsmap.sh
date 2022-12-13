@@ -27,9 +27,16 @@ DB_PATH=/home/nanopore/plasmid_assembly_readmap/wf-clone-validation-db
 
 current_path=$(pwd)
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output
+mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_calledFastq
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ$4
 
+/home/groups/schwessinger/guppy/6.2.1/ont-guppy/bin/guppy_basecaller \
+-i $1 \
+-s $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_calledFastq \
+-c dna_r9.4.1_450bps_sup.cfg -r -x auto --disable_qscore_filtering --barcode_kits "SQK-RBK110-96"
+
+cd $1 && cd .. && mv fast5 calledFast5 && cd $current_path
 
 {
 while read LS;
