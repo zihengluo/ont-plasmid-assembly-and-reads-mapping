@@ -14,7 +14,7 @@ echo barcode01,PER101
 echo barcode02,PER101
 echo
 echo Here is an example usage:
-echo bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /media/nvme/MinKNOW/Plasmids/20220825_plasmid1/no_sample/20220825_1335_MN21513_FAR25955_fa2a0187/fast5 /home/nanopore/plasmid_assembly_readmap/test_data/referencefa>
+echo bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /media/nvme/MinKNOW/Plasmids/20220825_plasmid1/no_sample/20220825_1335_MN21513_FAR25955_fa2a0187/fast5_subset /home/nanopore/plasmid_assembly_readmap/test_data/referencefa>
 }
 
 
