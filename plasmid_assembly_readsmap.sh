@@ -14,7 +14,7 @@ echo barcode01,PER101
 echo barcode02,PER101
 echo
 echo Here is an example usage:
-echo bash plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa>
+echo bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /media/nvme/MinKNOW/Plasmids/20220825_plasmid1/no_sample/20220825_1335_MN21513_FAR25955_fa2a0187/fast5 /home/nanopore/plasmid_assembly_readmap/test_data/referencefa>
 }
 
 
@@ -31,6 +31,7 @@ mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_assembly_output
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_readmap_output_minQ$4
 
+{
 /home/groups/schwessinger/guppy/6.2.1/ont-guppy/bin/guppy_basecaller \
 -i $1 \
 -s $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_calledFastq \
@@ -38,7 +39,7 @@ mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m
 
 cd $1 && cd .. && mv fast5 calledFast5 && cd $current_path
 
-{
+
 while read LS;
 do BC=$(echo ${LS} | cut -d ',' -f 1);
 SAMPLE=$(echo ${LS} | cut -d ',' -f 2);
