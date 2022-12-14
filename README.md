@@ -40,10 +40,7 @@ bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /home/
 
 ## Analysis of plasmid validation from ONT reads
 
-1. Inspect the files in output directories
-Open the output 'yyyymmdd_assembly_output' directory, there will be many subdirectories named after time_plasmidID_barcode{num}. These are the outputs of each plasmid assembled by EPI2ME. Each plasmid's subdirectory will contain a report showing the length and quality of reads, assembly map and other information. If the assembly process is succesful, there will be a plasmid assembly in Fasta format and an annotation file in bed format. Open the output 'yyyymmdd_readmap_output_minQ{num}' directories, there will be bam files and index bai files for each plasmid which are named after plasmidID.barcode{num}.ontreas.map.bam.(bai). The output 'yyyymmdd_calledFastq' directory contains standard guppy output with reads of each barcode and log file.
+The downstream analysis is demonstrated in the following doc:
 
-2. Open the report of plasmid assembly and record the mean quality of reads which could be used as the minimal q-score for reads mapping. Inspect the length distribution to see if the longest reads are in a similar length as the reference sequence if the dimers or multimers appear. 
-
-3.
+https://anu365-my.sharepoint.com/:w:/g/personal/u1009125_anu_edu_au/EdDI4dPw3klAjpsjTBUsej4B78ybWssmhzqh3kmgHqIxsQ?e=WcCfbu
 
