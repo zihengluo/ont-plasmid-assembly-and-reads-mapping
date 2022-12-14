@@ -24,7 +24,7 @@ Run the script without input to read manual
 
 `bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh`
 
-To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score for filitering.
+To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score of reads involved in reads mapping.
 
 Here is an example of using test data in the script directory for try:
 
@@ -32,10 +32,15 @@ Here is an example of using test data in the script directory for try:
 bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
 ```
 
-5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain three subdirectories called '$(date +%Y%m%d)_calledFastq', 'yyyymmdd_assembly_output', and 'yyyymmdd_readmap_output_minQ{num}' and also a log file.
+5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain three subdirectories called 'yyyymmdd_calledFastq', 'yyyymmdd_assembly_output', and 'yyyymmdd_readmap_output_minQ{num}' and also a log file.
 
 
 ## Analysis of plasmid validation from ONT reads
 
-1. Open the output 'yyyymmdd_assembly_output' directory, there will be many subdirectories named after time_plasmidID_barcode{num}. These are the outputs of each plasmid asssembled by EPI2ME. Each plasmid's subdiretory will contain a report showing length and quality of reads, assembly map and other inoformation. If the assembly process is succesful, there will be plasmid assembly in fasta format and annotaion in bed format. 
-2.
+1. Inspect the files in output directories
+Open the output 'yyyymmdd_assembly_output' directory, there will be many subdirectories named after time_plasmidID_barcode{num}. These are the outputs of each plasmid assembled by EPI2ME. Each plasmid's subdirectory will contain a report showing the length and quality of reads, assembly map and other information. If the assembly process is succesful, there will be a plasmid assembly in Fasta format and an annotation file in bed format. Open the output 'yyyymmdd_readmap_output_minQ{num}' directories, there will be bam files and index bai files for each plasmid which are named after plasmidID.barcode{num}.ontreas.map.bam.(bai). The output 'yyyymmdd_calledFastq' directory contains standard guppy output with reads of each barcode and log file.
+
+2. Open the report of plasmid assembly and record the mean quality of reads which could be used as the minimal q-score for reads mapping. Inspect the length distribution to see if the longest reads are in a similar length as the reference sequence if the dimers or multimers appear. 
+
+3.
+
