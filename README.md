@@ -25,15 +25,17 @@ barcode02,PER101
 `bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh`
 
 6. Fill in inputs for script
-To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score of reads involved in reads mapping. I would suggest q-score of 11 or slightly larger as a minimum threhodld for reads mapping. The mean q-score of reads we got previously were around 10. 
+To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score of reads involved in reads mapping. I would suggest a q-score of 11 or slightly larger as the minimum threhodld for reads mapping. The mean q-score of reads we got previously were around 10. 
 
-Here is an example of using test data in the script directory for try:
+7, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain three subdirectories called 'yyyymmdd_calledFastq', 'yyyymmdd_assembly_output', and 'yyyymmdd_readmap_output_minQ{num}' and also a log file.
+
+
+## Here is an example of using test data in the script directory for try:
 
 ```
 bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
 ```
 
-5, The directory containing all the outputs called 'yyyymmdd_plasmid_assembly_map_output' will show up in your current work directory. The output directory will contain three subdirectories called 'yyyymmdd_calledFastq', 'yyyymmdd_assembly_output', and 'yyyymmdd_readmap_output_minQ{num}' and also a log file.
 
 
 ## Analysis of plasmid validation from ONT reads
