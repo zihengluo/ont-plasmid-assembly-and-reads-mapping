@@ -26,10 +26,10 @@ if [[ $# -eq 0 ]] ; then
     exit 0
 fi
 
-# Specify the database path for EPI2ME workflow
+# specify the database path for EPI2ME workflow
 DB_PATH=/home/nanopore/plasmid_assembly_readmap/wf-clone-validation-db
 
-# make  output directories
+# make output directories
 current_path=$(pwd)
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output
 mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_calledFastq
