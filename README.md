@@ -43,7 +43,7 @@ bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /home/
 
 ## Analysis of plasmid validation from ONT reads
 
-The downstream analysis is demonstrated in the following doc:
+The downstream analysis is demonstrated in the following doc placed at team onedrive (UsefulResources/Plasmids):
 
 https://anu365-my.sharepoint.com/:w:/g/personal/u1009125_anu_edu_au/EdDI4dPw3klAjpsjTBUsej4B78ybWssmhzqh3kmgHqIxsQ?e=WcCfbu
 
