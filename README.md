@@ -11,9 +11,9 @@ If the sequencing kit or barcode kit is changed, please change the commandline o
 
 Example:
 
-barcode01,PER101
+barcode01,plasmidA
 
-barcode02,PER101
+barcode02,plasmidB
 
 2. Prepare the reference sequences in a directory. The name of reference sequence fasta files should be the same as the plasmidID in the csv file. For example, the plasmidID is 'PER101' then the reference file is 'PER101.fasta'. As for some plasmids with unusual name including special characters such as space, brackets and colon, please change these special characters into underscore. Also, when export plamid map into fasta sequence from geneious, you will be asked if special characters need to be change to underscore, please choose yes. Then double check the name of referecen sequences are consistent in csv file, fast file name, and fasta header.
 
