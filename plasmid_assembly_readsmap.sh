@@ -1,4 +1,4 @@
-# activate conda, otherwise error will appeaar sometimes.
+# activate conda, otherwise error will appeaar sometimes. The PATH needs to be filled depending on conda location at your machine.
 eval "$(/PATH/conda/bin/conda shell.bash hook)"
 
 # short mannual of using the script
