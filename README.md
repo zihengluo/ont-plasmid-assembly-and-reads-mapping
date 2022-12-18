@@ -1,6 +1,6 @@
 # Plasmid validation workflow with nanopore reads
 
-Here we introduce a script called 'plasmid_assembly_readsmap.sh' which dose basecalling on ONT raw data and assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. Then the ONT reads are filtered on specific minimum q-score and are mapped against the reference by minimap2 without secondary mapping, resulting in bam files as output. The script is placed at nanopore account of Schwessinger's team lab computer (nanopore@130.56.32.234:/home/nanopore/plasmid_assembly_readmap). The downstream analysis of plasmid validation is described below the script mannual.
+Here we introduce a script called 'plasmid_assembly_readsmap.sh' which dose basecalling on ONT raw data and assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. Then the ONT reads are filtered on specific minimum q-score and are mapped against the reference by minimap2 without secondary mapping, resulting in bam files as output. The script is placed and only availble at nanopore account of Schwessinger's team lab computer (nanopore@130.56.32.234:/home/nanopore/plasmid_assembly_readmap). The downstream analysis of plasmid validation is described below the script mannual.
 
 ## Attention
 If the sequencing kit or barcode kit is changed, please change the commandline of guppy basecalling in the script.
