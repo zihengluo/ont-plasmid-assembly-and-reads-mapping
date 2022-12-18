@@ -8,7 +8,7 @@ Create a conda enviornment with the yml file to run the script.
 
 ## Manual of using the script:
 
-1. Create a CSV file with barcode number as the first column, sample name as the second column,  No column header needed. The sample name is the same as the genious file name in our plasmid spreadsheet. Please replace the space with underscroes if there is any in the name.
+1. Create a CSV file with barcode number as the first column, sample name as the second column.  No column header needed. The sample name is the same as the genious file name in our plasmid spreadsheet. Please replace the space with underscroes if there is any in the name.
 
 Example:
 
