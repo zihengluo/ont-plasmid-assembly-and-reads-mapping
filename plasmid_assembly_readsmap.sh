@@ -1,5 +1,5 @@
 # activate conda, otherwise error will appeaar sometimes.
-eval "$(/opt/conda/bin/conda shell.bash hook)"
+eval "$(/PATH/conda/bin/conda shell.bash hook)"
 
 # short mannual of using the script
 Help()
