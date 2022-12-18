@@ -4,6 +4,7 @@ Here we introduce a script called 'plasmid_assembly_readsmap.sh' which dose base
 
 ## Attention
 Please fill in the commandline of guppy basecalling in the script depending on your kits.
+Create a conda enviornment with the yml file to run the script.
 
 ## Manual of using the script:
 
