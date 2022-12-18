@@ -13,11 +13,11 @@ echo Outputs will be in the directory running the script
 echo
 echo Here is an example of csv file:
 echo
-echo barcode01,PER101
-echo barcode02,PER101
+echo barcode01,plasmidA
+echo barcode02,plasmidB
 echo
 echo Here is an example usage:
-echo bash plasmid_assembly_readsmap.sh fast5 referencefa barcode.csv 11
+echo bash /PATH/plasmid_assembly_readsmap.sh /PATH/fast5 /PATH/referencefa /PATH/barcode.csv 11
 }
 
 # If no input is given, return manual
@@ -27,7 +27,7 @@ if [[ $# -eq 0 ]] ; then
 fi
 
 # specify the database path for EPI2ME workflow
-DB_PATH=/home/nanopore/plasmid_assembly_readmap/wf-clone-validation-db
+DB_PATH=/PATH/wf-clone-validation-db
 
 # make output directories
 current_path=$(pwd)
