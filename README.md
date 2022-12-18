@@ -36,7 +36,7 @@ To fill inputs of the script, in the first place, enter the path to the director
 ## Here is an example for try (you need to fill in PATH):
 
 ```
-bash plasmid_assembly_readsmap.sh fast5 reference barcode.csv 11
+bash /PATH/plasmid_assembly_readsmap.sh /PATH/fast5 /PATH/reference /PATH/barcode.csv 11
 ```
 
 
