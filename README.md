@@ -25,7 +25,7 @@ barcode02,PER101
 
 5. Run the script without input to read manual 
 
-`bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh`
+`bash plasmid_assembly_readsmap.sh`
 
 6. Fill in inputs for script
 To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score of reads involved in reads mapping. I would suggest a q-score of 11 or slightly larger as the minimum threhodld for reads mapping. The mean q-score of reads we got previously were around 10. 
@@ -36,12 +36,12 @@ To fill inputs of the script, in the first place, enter the path to the director
 ## Here is an example of using test data in the script directory for try:
 
 ```
-bash /home/nanopore/plasmid_assembly_readmap/plasmid_assembly_readsmap.sh /home/nanopore/plasmid_assembly_readmap/test_data/fastq /home/nanopore/plasmid_assembly_readmap/test_data/referencefa /home/nanopore/plasmid_assembly_readmap/test_data/barcode.csv 11
+bash plasmid_assembly_readsmap.sh fast5 reference barcode.csv 11
 ```
 
 
 
 ## Analysis of plasmid validation from ONT reads
 
-The downstream analysis is demonstrated in the following doc placed at team onedrive (UsefulResources/Plasmids)
+The downstream analysis is demonstrated in the following doc placed at team onedrive.
 
