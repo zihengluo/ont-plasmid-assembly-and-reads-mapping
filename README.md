@@ -3,7 +3,7 @@
 Here we introduce a script called 'plasmid_assembly_readsmap.sh' which dose basecalling on ONT raw data and assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. Then the ONT reads are filtered on specific minimum q-score and are mapped against the reference by minimap2 without secondary mapping, resulting in bam files as output.
 
 ## Attention
-Please fill in the commandline of guppy basecalling in the script, depending on your kits.
+Please fill in the commandline of guppy basecalling in the script depending on your kits.
 
 ## Manual of using the script:
 
