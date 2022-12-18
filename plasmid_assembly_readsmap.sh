@@ -39,10 +39,10 @@ mkdir $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m
 {
 
 # do basecalling on fast5 input
-/home/groups/schwessinger/guppy/6.2.1/ont-guppy/bin/guppy_basecaller \
+/PATH/guppy_basecaller \
 -i $1 \
 -s $current_path/$(date +%Y%m%d)_plasmid_assembly_readmap_output/$(date +%Y%m%d)_calledFastq \
--c dna_r9.4.1_450bps_sup.cfg -r -x auto --disable_qscore_filtering --barcode_kits "SQK-RBK110-96"
+-c ***********.cfg -r -x auto --disable_qscore_filtering --barcode_kits "*************"
 
 # change input fast5 dirctory name to calledFast5
 cd $1 && cd .. && mv fast5 calledFast5 && cd $current_path
