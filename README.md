@@ -3,7 +3,7 @@
 Here we introduce a script called 'plasmid_assembly_readsmap.sh' which dose basecalling on ONT raw data and assemble plasmid ONT reads into assembly by using EPI2ME/wf-clone-validation pipeline. Then the ONT reads are filtered on specific minimum q-score and are mapped against the reference by minimap2 without secondary mapping, resulting in bam files as output.
 
 ## Attention
-If the sequencing kit or barcode kit is changed, please change the commandline of guppy basecalling in the script.
+Please fill in the commandline of guppy basecalling in the script, depending on your kits.
 
 ## Manual of using the script:
 
@@ -25,7 +25,7 @@ barcode02,plasmidB
 
 5. Run the script without input to read manual 
 
-`bash plasmid_assembly_readsmap.sh`
+`bash /PATH/plasmid_assembly_readsmap.sh`
 
 6. Fill in inputs for script
 To fill inputs of the script, in the first place, enter the path to the directory which contain fast5 files for basecalling. In the second place, enter the path to the directory of reference sequences. In the third place, enter the path to the CSV file. All the path should be absolute. In the fourth place, enter the minimal quality score of reads involved in reads mapping. I would suggest a q-score of 11 or slightly larger as the minimum threhodld for reads mapping. The mean q-score of reads we got previously were around 10. 
