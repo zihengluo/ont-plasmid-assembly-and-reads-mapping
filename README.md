@@ -40,8 +40,3 @@ bash plasmid_assembly_readsmap.sh fast5 reference barcode.csv 11
 ```
 
 
-
-## Analysis of plasmid validation from ONT reads
-
-The downstream analysis is demonstrated in the following doc placed at team onedrive.
-
