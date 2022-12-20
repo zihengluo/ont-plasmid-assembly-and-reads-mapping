@@ -4,7 +4,7 @@ Here we introduce a script called 'plasmid_assembly_readsmap.sh' which does base
 
 ## Attention
 The script placed on our lab computer is well-written and the environment has been set up. The script on GitHub has no complete path for example run and argument for base calling.
-Please change the guppy base calling command line in the script if the kits are changed.
+Please modify the guppy base calling command line in the script if the kits are changed.
 Create a conda environment with the yml file to run the script if using the script at a place other than our lab computer's specific account.
 
 ## Manual of using the script:
